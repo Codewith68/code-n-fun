@@ -1,0 +1,35 @@
+p,div{
+   
+    color: #cc2d2d;
+}
+#third{
+    background-color: blue;
+    color: blueviolet;
+    font-size: x-large;
+}
+.class1{
+    color: darkgreen;
+}
+.class2{
+   background-color: #cc2d2d;
+}
+/*
+  selector{
+  property: value;
+}
+basic syntax of a css
+p{
+background_color:red;
+}
+
+*/
+
+
+
+
+/*
+# known as id selector, the id selector is unique
+. known as class selectors , for 2 or 3 or 4 
+
+
+*/
