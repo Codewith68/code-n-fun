@@ -1,0 +1,14 @@
+console.log(10<30);
+console.log(10>30);
+console.log(9<64);
+console.log(34>=30);
+console.log(10<=30);
+console.log(10==30);
+console.log( 10 == 10);
+console.log( 10 === 10);
+console.log( "10" == 10);
+console.log( "10" === 10);
+console.log( 10 != 10);
+console.log( "10" != 10);
+console.log( 10 !== 10);
+console.log( "10" !== 10);
