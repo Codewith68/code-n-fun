@@ -10,4 +10,4 @@ let socialHandels={
     insta:8278,
 };
 console.log(AppleProduct);
-console.log(socialHandels);
+//console.log(socialHandels);
