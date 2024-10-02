@@ -27,7 +27,7 @@ for(int i=0;i<s1;i++){
 for(int i=0;i<s2;i++){
     b[i]=res[s1+i];
 }
-mergeSort(a);
+mergeSort(a); //here we use recursion
 mergeSort(b);
 merge(a,b,res);
 }
@@ -42,3 +42,4 @@ for(int i=0;i<=v1.size()-1;i++){
     cout<<v1[i]<<" ";
     }
 }
+// it take o(nlogn) tc 
