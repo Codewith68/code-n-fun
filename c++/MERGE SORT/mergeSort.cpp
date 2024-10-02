@@ -6,7 +6,7 @@ void merge(vector<int>&v1,vector<int>&v2,vector<int>&res){
     int j=0;
     int k=0;
 while(i<v1.size()&&j<v2.size()){
-    if(v1[i]<v2[j]) res[k++]=v1[i++];
+    if(v1[i]<=v2[j]) res[k++]=v1[i++];
     else res[k++]=v2[j++];
 }
 if(i==v1.size()){
