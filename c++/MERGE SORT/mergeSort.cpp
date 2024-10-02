@@ -30,6 +30,8 @@ for(int i=0;i<s2;i++){
 mergeSort(a); //here we use recursion
 mergeSort(b);
 merge(a,b,res);
+a.clear();//  to reduce the search space for the space complexity
+b.clear();
 }
 int main(){
   vector<int>v1={5,1,3,0,4,9,6};
@@ -43,3 +45,10 @@ for(int i=0;i<=v1.size()-1;i++){
     }
 }
 // it take o(nlogn) tc 
+// it take 0(n) sp after using clear operation 
+
+
+
+
+// ulthough it take tc=o(nlogn)
+ //sc=o(nlogn)
