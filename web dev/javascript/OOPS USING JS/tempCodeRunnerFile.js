@@ -1,6 +1,5 @@
-
-    name;
-    Price;
-    Catagory;
-    Descripton;
-    Rating;
+name;
+    // Price;
+    // Catagory;
+    // Descripton;
+    // Rating;
