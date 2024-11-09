@@ -1,5 +1,1 @@
-name;
-    // Price;
-    // Catagory;
-    // Descripton;
-    // Rating;
+p.DisplayedProduct();
