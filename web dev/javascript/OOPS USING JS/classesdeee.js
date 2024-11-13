@@ -48,7 +48,7 @@ class product{
             }
         }
 
-        return builder;
+        return new builder;
     }
 
 
@@ -57,7 +57,7 @@ class product{
 
 
 
-const p=new product.builder()
+const p= product.builder
 .setName("iphone")
 .setPrice(1000)
 .setDescription("iphone 14 pro ")  
