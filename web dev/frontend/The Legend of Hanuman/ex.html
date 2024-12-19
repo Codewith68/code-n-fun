@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+      }
+      .container {
+          max-width: 800px;
+          margin: 0 auto;
+      }
+      h1, h2, h3, h4 {
+          text-align: center;
+      }
+      .form-group {
+          margin-bottom: 15px;
+      }
+      label {
+          display: block;
+          margin-bottom: 5px;
+      }
+      input[type="text"], input[type="email"], input[type="url"], input[type="file"], select, textarea {
+          width: 100%;
+          padding: 8px;
+          margin-top: 5px;
+      }
+      input[type="checkbox"], input[type="radio"] {
+          margin-right: 10px;
+      }
+      .form-group.inline {
+          display: flex;
+          flex-wrap: wrap;
+      }
+      .form-group.inline label {
+          width: 50%;
+          margin: 0;
+      }
+      .form-group.inline input {
+          width: auto;
+          margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Palantir Technologies</h1>
+      <h2>Software Engineer - Frontend Developer Productivity</h2>
+      <p>Seattle, WA<br />Dev / Full-Time / Hybrid</p>
+
+      <h3>SUBMIT YOUR APPLICATION</h3>
+      <form>
+        <div class="form-group">
+          <label for="resume">Resume/CV ✱</label>
+          <input type="file" id="resume" name="resume" required />
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full name ✱</label>
+          <input type="text" id="fullname" name="fullname" required />
+        </div>
+        <div class="form-group">
+          <label>Pronouns</label>
+          <div class="form-group inline">
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="he/him"
+              />He/him</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="she/her"
+              />She/her</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="they/them"
+              />They/them</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="xe/xem"
+              />Xe/xem</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="ze/hir"
+              />Ze/hir</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="ey/em"
+              />Ey/em</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="hir/hir"
+              />Hir/hir</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="fae/faer"
+              />Fae/faer</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="hu/hu"
+              />Hu/hu</label
+            >
+            <hr />
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="use name only"
+              />Use name only</label
+            >
+            <hr />
+            <label
+              ><input
+                type="checkbox"
+                name="pronouns"
+                value="custom"
+              />Custom</label
+            >
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email ✱</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+        <div class="form-group">
+          <label for="location">Current location ✱</label>
+          <input type="text" id="location" name="location" required />
+        </div>
+        <div class="form-group">
+          <label for="company">Current company</label>
+          <input type="text" id="company" name="company" />
+        </div>
+
+        <h3>LINKS</h3>
+        <div class="form-group">
+          <label for="linkedin">LinkedIn URL</label>
+          <input type="url" id="linkedin" name="linkedin" />
+        </div>
+        <div class="form-group">
+          <label for="github">GitHub URL</label>
+          <input type="url" id="github" name="github" />
+        </div>
+        <div class="form-group">
+          <label for="portfolio">Portfolio URL</label>
+          <input type="url" id="portfolio" name="portfolio" />
+        </div>
+
+        <h3>SUPPLEMENTARY QUESTIONS</h3>
+        <div class="form-group">
+          <label>Language Skill(s) (Check all that apply) ✱</label>
+          <div class="form-group inline">
+            <label
+              ><input type="checkbox" name="languages" value="english" />English
+              (ENG)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="spanish" />Spanish
+              (SPA)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="french" />French
+              (FRA)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="german" />German
+              (DEU)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="japanese"
+              />Japanese (JPN)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="cantonese"
+              />Cantonese (CANT)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="mandarin"
+              />Mandarin (MAN)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="dutch" />Dutch
+              (NLD)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="hindi" />Hindi
+              (HIN)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="arabic" />Arabic
+              (ARA)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="danish" />Danish
+              (DAN)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="turkish" />Turkish
+              (TUR)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="portuguese"
+              />Portuguese (POR)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="hebrew" />Hebrew
+              (HEB)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="swedish" />Swedish
+              (SWE)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="norwegian"
+              />Norwegian (NOR)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="italian" />Italian
+              (ITA)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="vietnamese"
+              />Vietnamese (VIE)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="tagalog" />Tagalog
+              (TGL)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="khmer" />Khmer
+              (KHM)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="hmong" />Hmong
+              (HMN)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="telugu" />Telugu
+              (TEL)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="bengali" />Bengali
+              (BNE)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="marathi" />Marathi
+              (MAR)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="urdu" />Urdu
+              (URD)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="gujarati"
+              />Gujarati (GUJ)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="lithuanian"
+              />Lithuanian (LIT)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="asl" />American
+              Sign Language (ASL)</label
+            >
+            <label
+              ><input type="checkbox" name="languages" value="bsl" />British
+              Sign Language (BSL)</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="choose-not-to-disclose"
+              />Choose not to disclose</label
+            >
+            <label
+              ><input
+                type="checkbox"
+                name="languages"
+                value="other"
+              />Other</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="preferred-name"
+            >Preferred Name | What would you like us to call you?</label
+          >
+          <input type="text" id="preferred-name" name="preferred-name" />
+        </div>
+        <div class="form-group">
+          <label for="name-pronunciation"
+            >Name Pronunciation | How do you pronounce your name?</label
+          >
+          <input
+            type="text"
+            id="name-pronunciation"
+            name="name-pronunciation"
+          />
+        </div>
+
+        <h3>WORK AUTHORIZATION</h3>
+        <div class="form-group">
+          <label
+            >Are you legally authorized to work in the country for which you are
+            applying? ✱</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="work-authorization"
+              value="yes"
+              required
+            />Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="work-authorization"
+              value="no"
+              required
+            />No</label
+          >
+        </div>
+        <div class="form-group">
+          <label
+            >Will you now or in the future require sponsorship for employment
+            visa status (e.g., H-1B, etc.)? ✱</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="visa-sponsorship"
+              value="yes"
+              required
+            />Yes</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="visa-sponsorship"
+              value="no"
+              required
+            />No</label
+          >
+        </div>
+
+        <h3>UNIVERSITY</h3>
+        <div class="form-group">
+          <label for="university"
+            >Which university are you currently attending or did you last
+            attend? Please select "Other (School Not Listed)" if your school is
+            not listed. ✱</label
+          >
+          <select id="university" name="university" required>
+            <option value="" disabled selected>Select...</option>
+            <option value="rtmnu">Nagpur university</option>
+            <option value="other">Other (School Not Listed)</option>
+          </select>
+        </div>
+
+        <h3>HOW DID YOU HEAR ABOUT THIS OPPORTUNITY?</h3>
+        <div class="form-group">
+          <label for="how-hear"
+            >Please tell us how you heard about this opportunity. ✱</label
+          >
+          <select id="how-hear" name="how-hear" required>
+            <option value="" disabled selected>Select...</option>
+            <option value="newspaper">Newspaper</option>
+            <option value="internet">Internet</option>
+          </select>
+        </div>
+
+        <h3>
+          SOFTWARE ENGINEER - FRONTEND DEVELOPER PRODUCTIVITY CUSTOM QUESTION
+        </h3>
+        <div class="form-group">
+          <label for="experience"
+            >Describe your experience with frontend build tooling, and/or a way
+            you improved the developer productivity in your most recent
+            role.</label
+          >
+          <textarea id="experience" name="experience" rows="5"></textarea>
+        </div>
+
+        <h3>RELEVANT EXPERIENCE</h3>
+        <div class="form-group">
+          <label for="experience-years"
+            >How many years of relevant, post college work experience do you
+            have? ✱</label
+          >
+          <select id="experience-years" name="experience-years" required>
+            <option value="" disabled selected>Select...</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </div>
+
+        <h3>ADDITIONAL QUESTIONS</h3>
+        <div class="form-group">
+          <label for="favorite-project"
+            >What has been your favorite project or proudest accomplishment?
+            Why?</label
+          >
+          <textarea
+            id="favorite-project"
+            name="favorite-project"
+            rows="5"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="why-palantir">Why do you want to work at Palantir?</label>
+          <textarea id="why-palantir" name="why-palantir" rows="5"></textarea>
+        </div>
+
+        <h3>ADDITIONAL INFORMATION</h3>
+        <div class="form-group">
+          <label for="additional-info"
+            >Add a cover letter or anything else you want to share.</label
+          >
+          <textarea
+            id="additional-info"
+            name="additional-info"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <h3>
+          U.S. EQUAL EMPLOYMENT OPPORTUNITY INFORMATION (Completion is voluntary
+          and will not subject you to adverse treatment)
+        </h3>
+        <p>
+          Palantir provides equal employment and affirmative action
+          opportunities to applicants and employees without regard to race,
+          color, religion, sex, sexual orientation, gender identity, national
+          origin, protected veteran status, or disability.
+        </p>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>
+          <select id="gender" name="gender">
+            <option value="" disabled selected>Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="race">Race</label>
+          <select id="race" name="race">
+            <option value="" disabled selected>Select...</option>
+            <option value="asian">Asian</option>
+            <option value="american">American</option>
+          </select>
+        </div>
+
+        <h3>
+          SELF-IDENTIFICATION OF VETERAN STATUS (Completion is voluntary and
+          will not subject you to adverse treatment)
+        </h3>
+        <p>
+          Palantir is a Government contractor subject to the Section 4212 of the
+          Vietnam Era Veterans’ Readjustment Assistance Act of 1974, as amended
+          by the Jobs for Veterans Act of 2002, which requires Government
+          contractors to take affirmative action to employ and advance in
+          employment:
+        </p>
+        <ul>
+          <li>
+            Disabled veterans – A veteran who served on active duty in the U.S.
+            military and is entitled to disability compensation (or who but for
+            the receipt of military retired pay would be entitled to disability
+            compensation) under laws administered by the Secretary of Veterans
+            Affairs, or was discharged or released from active duty because of a
+            service-connected disability;
+          </li>
+          <li>
+            Recently separated veteran – A veteran separated during the
+            three-year period beginning on the date of the veteran's discharge
+            or release from active duty in the U.S military, ground, naval, or
+            air service;
+          </li>
+          <li>
+            Active duty wartime or campaign badge veteran – A veteran who served
+            on active duty in the U.S. military during a war, or in a campaign
+            or expedition for which a campaign badge was authorized under the
+            laws administered by the Department of Defense;
+          </li>
+          <li>
+            Armed forces service medal veteran – A veteran who, while serving on
+            active duty in the U.S. military ground, naval, or air service,
+            participated in a United States military operation for which an
+            Armed Forces service medal was awarded pursuant to Executive Order
+            12985 (61 Fed. Reg. 1209).
+          </li>
+        </ul>
+        <div class="form-group">
+          <label for="veteran-status">Veteran status</label>
+          <select id="veteran-status" name="veteran-status">
+            <option value="" disabled selected>Select...</option>
+            <option value="Disabled veterans">Disabled veterans</option>
+            <option value="Recently separated veteran">
+              Recently separated veteran
+            </option>
+            <option value="Active duty wartime or campaign badge veteran">
+              Active duty wartime or campaign badge veteran
+            </option>
+          </select>
+        </div>
+
+        <h3>VOLUNTARY SELF-IDENTIFICATION OF DISABILITY</h3>
+        <p>Form CC-305 / OMB Control Number 1250-0005 / Expires 04/30/2026</p>
+        <p>
+          Why are you being asked to complete this form?<br />
+          We are a federal contractor or subcontractor. The law requires us to
+          provide equal employment opportunity to qualified people with
+          disabilities. We have a goal of having at least 7% of our workers as
+          people with disabilities. The law says we must measure our progress
+          towards this goal. To do this, we must ask applicants and employees if
+          they have a disability or have ever had one. People can become
+          disabled, so we need to ask this question at least every five years.
+        </p>
+        <p>
+          Completing this form is voluntary, and we hope that you will choose to
+          do so. Your answer is confidential. No one who makes hiring decisions
+          will see it. Your decision to complete the form and your answer will
+          not harm you in any way. If you want to learn more about the law or
+          this form, visit the U.S. Department of Labor’s Office of Federal
+          Contract Compliance Programs (OFCCP) website at www.dol.gov/ofccp.
+        </p>
+        <p>
+          How do you know if you have a disability?<br />
+          A disability is a condition that substantially limits one or more of
+          your “major life activities.” If you have or have ever had such a
+          condition, you are a person with a disability. Disabilities include,
+          but are not limited to:
+        </p>
+        <ul>
+          <li>
+            Alcohol or other substance use disorder (not currently using drugs
+            illegally)
+          </li>
+          <li>
+            Autoimmune disorder, for example, lupus, fibromyalgia, rheumatoid
+            arthritis, HIV/AIDS
+          </li>
+          <li>Blind or low vision</li>
+          <li>Cancer (past or present)</li>
+          <li>Cardiovascular or heart disease</li>
+          <li>Celiac disease</li>
+          <li>Cerebral palsy</li>
+          <li>Deaf or serious difficulty hearing</li>
+          <li>Diabetes</li>
+          <li>
+            Disfigurement, for example, disfigurement caused by burns, wounds,
+            accidents, or congenital disorders
+          </li>
+          <li>Epilepsy or other seizure disorder</li>
+          <li>
+            Gastrointestinal disorders, for example, Crohn's Disease, irritable
+            bowel syndrome
+          </li>
+          <li>Intellectual or developmental disability</li>
+          <li>
+            Mental health conditions, for example, depression, bipolar disorder,
+            anxiety disorder, schizophrenia, PTSD
+          </li>
+          <li>Missing limbs or partially missing limbs</li>
+          <li>
+            Mobility impairment, benefiting from the use of a wheelchair,
+            scooter, walker, leg brace(s) and/or other supports
+          </li>
+          <li>
+            Nervous system condition, for example, migraine headaches,
+            Parkinson’s disease, multiple sclerosis (MS)
+          </li>
+          <li>
+            Neurodivergence, for example, attention-deficit/hyperactivity
+            disorder (ADHD), autism spectrum disorder, dyslexia, dyspraxia,
+            other learning disabilities
+          </li>
+          <li>Partial or complete paralysis (any cause)</li>
+          <li>
+            Pulmonary or respiratory conditions, for example, tuberculosis,
+            asthma, emphysema
+          </li>
+          <li>Short stature (dwarfism)</li>
+          <li>Traumatic brain injury</li>
+        </ul>
+        <div class="form-group">
+          <label for="disability-status">Disability status</label>
+          <select id="disability-status" name="disability-status">
+            <option value="" disabled selected>Select...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
