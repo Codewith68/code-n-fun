@@ -1,7 +1,7 @@
 function multiply(a,b){
     //a ,b are expected inputs
-    console.log(b);
+    // console.log(b);
     console.log(a*b);
 }
-multiply(10,);
+multiply(10,2);
 // 10,2 are actual inputs

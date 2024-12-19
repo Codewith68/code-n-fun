@@ -10,4 +10,4 @@ function sod(n){
 }
 const n=7843217;
 const result=sod(n);
-console.log("sum of digits ="+result);
+console.log("sum of digits =",result);
