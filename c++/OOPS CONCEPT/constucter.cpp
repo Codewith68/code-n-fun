@@ -22,14 +22,13 @@ float percentage;
     rollNo=r;
     percentage=0;
  }
-
-
- Student s
-
-
-
+    Student(){
+        cout<<"default constructer call hua\n";
+        name="no name";
+        rollNo=0;
+        percentage=0;
+    }
 };
-
 
 int main(){
     Student s("Subrat",185,76.5);
