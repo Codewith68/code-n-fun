@@ -114,6 +114,9 @@ LinkedList(){
             size--;
         }
     } 
+    void GetSize(){
+        cout<<size<<endl;
+    }
     void display(){
         Node* temp=head;
         while(temp!=NULL){
