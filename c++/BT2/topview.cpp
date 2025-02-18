@@ -87,6 +87,7 @@ int main(){
     int arr[]={1,2,3,4,5,INT_MIN,6,INT_MIN,9,INT_MIN,INT_MIN,7,INT_MIN,INT_MIN,INT_MIN,8};
     int n=sizeof(arr)/sizeof(arr[0]);
     Node *root=construct(arr,n);
+    levelOrder(root);
     int minLevel=0;
     int maxLevel=0;
     HorLevel(root,minLevel,maxLevel,0);
