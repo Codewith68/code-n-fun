@@ -13,3 +13,8 @@ x**=3;
 console.log(x);
 x%=4;
 console.log(x);
+
+
+let y=10;
+console.log(y/3);//it will give the floor value of the division)
+console.log(y%3);//it will give the remainder value of the division)
