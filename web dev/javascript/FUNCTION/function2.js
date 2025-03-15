@@ -1,7 +1,9 @@
-function isEvenorOdd(x){
-    // x-> parameter -> placeholder -> expected input
-   if(x%2==0) console.log("even");
-   else console.log("Odd");
+function isEvenOrOdd(num){
+  if(num % 2==0){
+    return "Even";
+  }
+  else {
+    return "Odd";
+  }
 }
-  isEvenorOdd(67);
-  // 67 -> argument -> actual input ->
+console.log(isEvenOrOdd(39));
