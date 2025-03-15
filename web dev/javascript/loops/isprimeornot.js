@@ -1,7 +1,17 @@
-function isPrime(x){
-    for(let i=2;i<=x-1;i++){
-        if(x%i==0) return false;
+function IsPrimrorNot(num){
+    let isPrime=true;
+    for(let i=2;i<num;i++){
+        if(num%i==0){
+            isPrime=false;
+            break;
+        }
     }
-    return true;
+    if(isPrime){
+        return "Prime";
+    }
+    else{
+        return "Not Prime";
+    }
 }
-console.log(isPrime(37));
+
+console.log(IsPrimrorNot(17));

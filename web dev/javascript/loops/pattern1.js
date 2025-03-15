@@ -1,8 +1,8 @@
-function pattern(x){
-    for(let i=0;i<=x-1;i++){
-        let stars="";
-        for(let j=0;j<=x-1;j++) stars += "*";
-        console.log(stars);
+let x=4;
+for(let i=0;i<x;i++){
+    let star="";
+    for(let j=0;j<x;j++){
+        star+="*";
     }
+    console.log(star);
 }
-console.log(pattern(4));

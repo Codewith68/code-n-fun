@@ -1,13 +1,11 @@
+const digits=156;
+const result=sod(digits);
+console.log("sum of digits are ",result)
 function sod(n){
-    let lastdigit=0;
     let sum=0;
     while(n){
-        lastdigit=n%10;
-        sum+=lastdigit;
+        sum+=n%10;
         n=Math.floor(n/10);
     }
     return sum;
 }
-const n=7843217;
-const result=sod(n);
-console.log("sum of digits =",result);

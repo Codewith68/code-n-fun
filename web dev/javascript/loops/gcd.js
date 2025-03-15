@@ -4,4 +4,4 @@ function GCD(a,b){
 }
 
 
-console.log(GCD(24,28));
+console.log(GCD(42,78));

@@ -1,8 +1,7 @@
-let x=10;
-let i=0;
-let ans=0
-while(i<=x){
-    ans+=i;
-    i++
+let num=10;
+let sum=0;
+while(num){
+    sum+=num;
+    num--
 }
-console.log(ans)
+console.log(sum)
