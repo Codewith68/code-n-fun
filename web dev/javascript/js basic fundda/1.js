@@ -1,9 +1,9 @@
-// let x=10;
-// let y=20;
-// console.log(typeof(x+y));
-// console.log("the sum of",x,"and",y, "is",x+y);
-// console.log("the sum of ",x," and "+y+" is "+(x+y));
-// // so here is the first priority for brackets and then the string concatenation
+let x=10;
+let y=20;
+console.log(typeof(x+y));
+console.log("the sum of",x,"and",y, "is",x+y);
+console.log("the sum of ",x," and "+y+" is "+(x+y));
+// so here is the first priority for brackets and then the string concatenation
 
 
 
