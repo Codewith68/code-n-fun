@@ -1,0 +1,519 @@
+:root {
+  --bg-dark: #050505;
+  --primary-lime: #d9ff43;
+  --text-white: #ffffff;
+  --text-gray: #a1a1aa;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --font-main: "Inter", sans-serif;
+  --blur-blob-color: rgba(30, 90, 40, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+/* Background Blobs */
+.background-blobs {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.blob-1 {
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, #1a3a1a 0%, transparent 70%);
+  top: -200px;
+  left: -200px;
+}
+
+.blob-2 {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #2a3a15 0%, transparent 70%);
+  bottom: 0;
+  right: -100px;
+}
+
+.blob-3 {
+  width: 300px;
+  height: 300px;
+  background: var(--primary-lime);
+  opacity: 0.05;
+  top: 20%;
+  right: 20%;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: var(--primary-lime);
+  color: #000;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #eaff80;
+}
+
+.btn-login {
+  color: var(--text-white);
+  padding: 0.8rem 1.8rem;
+  border: 1px solid var(--glass-border);
+  border-radius: 50px;
+  margin-right: 1rem;
+}
+
+.btn-link {
+  color: var(--text-white);
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.label-small {
+  color: var(--text-gray);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+
+nav ul li a {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+nav ul li a:hover {
+  color: var(--text-white);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  min-height: 80vh;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 4rem;
+}
+
+.hero-text h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.hero-text p {
+  color: var(--text-gray);
+  margin-bottom: 3rem;
+  max-width: 400px;
+  font-size: 0.95rem;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-image-wrapper {
+  position: relative;
+  width: 450px; /* Specific width for proper scaling */
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 20px; /* Slight rounding or mask if needed */
+  /* To match the circle cut, we might need a mask, but simple rect for now */
+  mask-image: radial-gradient(circle at center, black 60%, transparent 100%); 
+  /* The reference image has a "cutout" look. Let's try to mimic the circle crop at bottom */
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  /* Actually reference is a person cut out. My generated image is a full square. 
+     I'll just circle crop it for style or leave it. 
+     Reference: Man is cut out against a green shape. 
+     I'll use a simple border-radius for now.
+  */
+  -webkit-mask-image: none;
+  mask-image: none;
+  clip-path: circle(70% at 50% 40%);
+}
+
+.floating-stats {
+  position: absolute;
+  top: 75%; /* Lower it */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120%; /* Wider than image */
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats-row.head {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+.eth-price {
+  color: var(--text-white);
+  font-weight: 600;
+}
+
+.stats-row.bottom {
+  gap: 2rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-item .label {
+  font-size: 0.7rem;
+  color: var(--text-gray);
+}
+
+.stat-item .value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.avatars-group {
+  display: flex;
+}
+
+.avatars-group img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-left: -10px;
+}
+
+.avatars-group img:first-child {
+  margin-left: 0;
+}
+
+
+/* Trending Section */
+.trending {
+  padding: 8rem 0;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.gallery-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
+}
+
+.item-1 { margin-top: 2rem; }
+.item-2 { margin-bottom: 2rem; }
+.item-3 { margin-top: 0; }
+.item-4 { margin-bottom: 0; }
+
+
+.trending-text {
+  flex: 0.8;
+}
+
+.trending-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.trending-text p {
+  color: var(--text-gray);
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+
+/* Top Artists */
+.top-artists {
+  padding: 4rem 0;
+}
+
+.artist-cards {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.artist-card {
+  flex: 1;
+  background: var(--glass-bg); /* Use lighter background */
+  background: #e0e0e0; /* Matches the white/light grey cards in reference */
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+  padding: 1.5rem;
+  color: #000; /* Dark text for these light cards */
+}
+
+.artist-avatar {
+  position: absolute;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid white;
+  z-index: 10;
+}
+
+.artist-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artist-info {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.artist-info h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.artist-banner {
+  height: 120px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+
+.artist-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Newsletter */
+.newsletter {
+  padding: 6rem 0;
+}
+
+.newsletter-content {
+  text-align: left;
+}
+
+.newsletter-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.newsletter-input {
+  display: inline-flex;
+  border: 1px solid var(--glass-border);
+  padding: 0.5rem;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.02);
+  width: 100%;
+  max-width: 500px;
+}
+
+.newsletter-input input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 1.5rem;
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  padding: 4rem 0;
+  border-top: 1px solid var(--glass-border);
+  justify-content: space-between;
+  margin-top: 4rem;
+  font-size: 0.8rem;
+}
+
+.footer-brand {
+  max-width: 300px;
+}
+
+.footer-brand h4 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.footer-brand p {
+  color: var(--text-gray);
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  color: var(--text-gray);
+  font-size: 0.7rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 4rem;
+}
+
+.footer-links .col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-links h5 {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  color: var(--text-gray);
+}
+
+.footer-links a:hover {
+  color: var(--primary-lime);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text {
+    padding-right: 0;
+    margin-bottom: 4rem;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+  }
+  
+  .trending {
+    flex-direction: column-reverse;
+  }
+  
+  .artist-cards {
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  footer {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
