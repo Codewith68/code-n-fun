@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VibeVault | Hip-Hop Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Header -->
+      <header class="main-header">
+        <div class="logo">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            class="logo-icon"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="var(--color-accent)"
+              stroke-width="2"
+            />
+            <path
+              d="M12 2L12 22"
+              stroke="var(--color-accent)"
+              stroke-width="2"
+            />
+            <path
+              d="M2 12L22 12"
+              stroke="var(--color-accent)"
+              stroke-width="2"
+            />
+            <circle cx="12" cy="12" r="4" fill="var(--color-accent)" />
+          </svg>
+          <span>VIBEVAULT</span>
+        </div>
+        <nav class="main-nav">
+          <a href="#" class="active">HOME</a>
+          <a href="#">NEW</a>
+          <a href="#">PRODUCT</a>
+          <a href="#">OUR STORY</a>
+          <a href="#">CATALOG</a>
+        </nav>
+        <div class="header-actions">
+          <button class="icon-btn" aria-label="Search">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+            >
+              <circle cx="9" cy="9" r="7" />
+              <path d="M14 14L18 18" />
+            </svg>
+          </button>
+          <a href="#" class="shop-btn">SHOP</a>
+          <a href="#" class="login-btn">LOGIN</a>
+        </div>
+      </header>
+
+      <!-- Hero Section -->
+      <main>
+        <section class="hero-section">
+          <!-- Hero Background Image -->
+          <div class="hero-bg">
+            <img src="assets/hero_man.png" alt="Man wearing hip hop jewelry" />
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-text-block">
+              <div class="sub-headline">
+                <span class="icon-circle">◎</span>
+                DISCOVER A WORLD OF BLING AND EXPRESSION<br />TO TAKE YOUR STYLE
+                TO THE NEXT LEVEL
+              </div>
+              <h1 class="main-headline">
+                Spark your shine<br />
+                with hip-hop jewelry
+              </h1>
+              <div class="hero-ctas">
+                <a href="#" class="btn btn-outline">COLLECTION</a>
+                <a href="#" class="btn btn-primary">SHOP NOW ↗</a>
+              </div>
+            </div>
+
+            <!-- Floating Project Card mimic -->
+            <div class="hero-floating-card">
+              <div class="card-image">
+                <img src="assets/product_grillz.png" alt="Silver Grillz" />
+              </div>
+              <div class="card-details">
+                <h3>GRILLZ LV SILVER</h3>
+                <p>Amplify your smile with our personalized grillz</p>
+                <div class="price-row">
+                  <span class="price">$1599</span>
+                  <button class="add-btn">+</button>
+                </div>
+              </div>
+              <div class="card-footer">
+                <p>
+                  Elevate your style with our personalized jewelry consultation.
+                </p>
+                <button class="arrow-btn">→</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation arrows overlay -->
+          <div class="hero-nav-arrows">
+            <button class="nav-arrow prev">←</button>
+            <button class="nav-arrow next">→</button>
+          </div>
+        </section>
+
+        <!-- Feature Grid -->
+        <section class="feature-grid">
+          <div class="feature-card dark-card">
+            <div class="feature-content">
+              <div class="icon-large">✺</div>
+              <h3>Design your own<br />custom jewelry</h3>
+              <p>
+                Craft a One-of-a-Kind Statement Piece that Reflects Your Unique
+                Style
+              </p>
+            </div>
+            <div class="feature-images-stack">
+              <img
+                src="assets/product_chain.png"
+                alt="Chain detail"
+                class="zoom-crop round-img"
+              />
+              <img
+                src="assets/prior_art.png"
+                class="zoom-crop round-img"
+                style="display: none"
+              />
+              <!-- Placeholder if needed -->
+            </div>
+            <button class="corner-arrow">↗</button>
+          </div>
+          <div class="feature-card gold-card">
+            <div class="triptych-header">
+              <h3>Artist That Choose Us</h3>
+              <div class="artist-avatars">
+                <span>●</span><span>●</span><span>●</span>
+              </div>
+            </div>
+            <div class="artist-images">
+              <div class="artist-circle"><img src="assets/hero_man.png" /></div>
+              <div class="artist-circle">
+                <img
+                  src="assets/hero_man.png"
+                  style="filter: hue-rotate(90deg)"
+                />
+              </div>
+              <div class="artist-circle">
+                <img src="assets/hero_man.png" style="filter: grayscale(1)" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="product-section">
+          <div class="section-header">
+            <h2>New Ice Jewelry <span class="divider-icon">◎</span> By Type</h2>
+            <div class="header-controls">
+              <button class="control-btn round-icon">→</button>
+              <button class="control-btn pill">SHOP NOW ↗</button>
+            </div>
+          </div>
+
+          <div class="filter-bar">
+            <button class="filter-chip active">All</button>
+            <button class="filter-chip">Bracelets</button>
+            <button class="filter-chip">Pendants</button>
+            <button class="filter-chip">Rings</button>
+            <button class="filter-chip">Chains</button>
+            <button class="filter-chip">Grillz</button>
+          </div>
+
+          <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+              <div class="card-top">
+                <button class="arrow-corner-circle">↗</button>
+                <button class="heart-btn-circle">♡</button>
+              </div>
+              <div class="product-img-container">
+                <img src="assets/product_chain.png" alt="Luminous Lotus" />
+              </div>
+
+              <div class="product-info-overlay">
+                <div class="tag-pill sale">Sale Pendants</div>
+                <h3>Luminous Lotus</h3>
+                <p class="p-desc">Crafted with meticulous detail...</p>
+                <div class="product-meta">
+                  <span class="price">$420 <del>$580</del></span>
+                  <span class="rating">★ 4.85</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+              <div class="card-top">
+                <button class="arrow-corner-circle">↗</button>
+                <button class="heart-btn-circle">♡</button>
+              </div>
+              <div class="product-img-container">
+                <img
+                  src="assets/product_grillz.png"
+                  alt="Frost Bite Grillz"
+                  class="grillz-img"
+                />
+              </div>
+              <div class="product-info-overlay">
+                <div class="tag-pill new">New Grillz</div>
+                <h3>Frost Bite Grillz</h3>
+                <p class="p-desc">Embrace the frosty elegance...</p>
+                <div class="product-meta">
+                  <span class="price">$257</span>
+                  <span class="rating">★ 4.95</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card wide-card img-bg-card">
+              <div class="card-bg">
+                <img src="assets/product_chain.png" style="opacity: 0.6" />
+              </div>
+              <div class="card-top">
+                <div class="tag-pill">Best Bracelets</div>
+              </div>
+              <div class="center-content">
+                <h3>Frost Bite Grillz</h3>
+                <img src="assets/product_grillz.png" class="floating-grillz" />
+                <button class="btn btn-outline-white-sm">MORE INFO →</button>
+                <button class="heart-btn-circle absolute-br">♡</button>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+              <div class="card-top">
+                <button class="arrow-corner-circle">↗</button>
+                <button class="heart-btn-circle">♡</button>
+              </div>
+              <div class="product-img-container">
+                <img
+                  src="assets/hero_man.png"
+                  style="object-position: top; transform: scale(1.5)"
+                />
+              </div>
+              <div class="product-info-overlay">
+                <div class="tag-pill rec">Recommended Pendants</div>
+                <h3>Eternal Embrace</h3>
+                <p class="p-desc">Symbolizing eternal love...</p>
+                <div class="product-meta">
+                  <span class="price">$365 <del>$450</del></span>
+                  <span class="rating">★ 5.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination-indicator">
+            1/32 <span class="pag-arrows">← →</span>
+          </div>
+        </section>
+
+        <!-- Bottom Section (Coveted) -->
+        <section class="coveted-section">
+          <div class="section-title-large">
+            <h2>
+              Uncover Our Most <span class="gold-pill">Coveted ●●✺</span><br />
+              <span class="icon-rings">◎◎◎</span> Hip-Hop Jewelry
+            </h2>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-box">
+              <div class="stat-header">
+                <div class="stat-icon-gold">✺</div>
+                <button class="arrow-corner-white">↗</button>
+              </div>
+
+              <div class="stat-number">14.500+</div>
+              <div class="stat-avatars">
+                <img src="assets/hero_man.png" />
+                <img src="assets/hero_man.png" style="margin-left: -10px" />
+                <img src="assets/hero_man.png" style="margin-left: -10px" />
+              </div>
+              <p class="stat-desc">
+                With a proud track record of delivering exceptional quality and
+                style...
+              </p>
+            </div>
+
+            <div class="promo-box">
+              <div class="promo-content">
+                <div class="tags-row">
+                  <span class="tag">Hot Deal</span>
+                  <span class="tag">Best</span>
+                  <span class="tag">New</span>
+                </div>
+                <div class="main-promo-image">
+                  <img
+                    src="assets/product_chain.png"
+                    alt="Pendant"
+                    class="main-chain-img"
+                  />
+                  <span class="overlay-brand">G&PLENA</span>
+                </div>
+                <h3>Enchanting Ember Pendant</h3>
+                <p>The Enchanting Ember features a radiant gemstone...</p>
+                <div class="promo-footer">
+                  <div class="user-pill">
+                    <img src="assets/hero_man.png" class="tiny-avatar" />
+                    <span>+1.5k</span>
+                  </div>
+                  <span class="rating">★ 4.95</span>
+                </div>
+              </div>
+              <div class="side-list">
+                <div class="list-item">
+                  <span class="up-arrow">↑</span>
+                  <span class="vertical-text">Luminous Harmony Necklace</span>
+                  <span class="circle-icon">◎</span>
+                </div>
+                <div class="list-item">
+                  <span class="up-arrow">↑</span>
+                  <span class="vertical-text">Whispering Serenity Ring</span>
+                  <span class="circle-icon">◎</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer
+          style="
+            margin-top: 50px;
+            text-align: center;
+            color: #555;
+            font-size: 12px;
+            padding-bottom: 20px;
+          "
+        >
+          © 2026 VibeVault Inc.
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
